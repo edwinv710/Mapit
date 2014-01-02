@@ -1,0 +1,31 @@
+%h1 All Maps
+
+%table
+  %tr
+    %th Name
+    %th Width
+    %th Height
+    %th Container width
+    %th Container height
+    %th Tile width
+    %th Tile height
+    %th
+    %th
+    %th
+
+  - @maps.each do |map|
+    %tr
+      %td= map.name
+      %td= map.width
+      %td= map.height
+      %td= map.container_width
+      %td= map.container_height
+      %td= map.tile_width
+      %td= map.tile_height
+      %td= link_to 'Show', map
+      %td= link_to 'Edit', edit_map_path(map)
+      %td= link_to 'Destroy', map, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'Create New Map', new_map_path

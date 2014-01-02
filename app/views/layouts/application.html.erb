@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mapit</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= yield :stylesheet_links %>
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= yield :javascript_includes %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

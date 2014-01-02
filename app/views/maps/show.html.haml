@@ -1,0 +1,13 @@
+- content_for :javascript_includes do
+  = javascript_include_tag 'maps.js.coffee'
+  = javascript_include_tag 'layers.js.coffee'
+  = javascript_include_tag 'panel.js.coffee'
+- content_for :stylesheet_links do 
+  = stylesheet_link_tag 'maps.css.scss'
+  = stylesheet_link_tag 'layers.css.scss'
+  = stylesheet_link_tag 'panel.css.scss'
+
+-@tilesets.each do |tileset|
+  =image_tag("#{tileset.source}", :class => "tileset", :id => "tileset_#{tileset.id}")
+
+=render 'display', :map => @map, :file => "#{Rails.root}/public/#{@map.map_source}", :array => @map_array   

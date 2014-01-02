@@ -1,0 +1,75 @@
+body {
+	background-color: #000;
+	margin: 0px;
+	padding: 0px;
+
+	#game {
+		position: absolute;
+		left: 50%;
+	  	top: 50%;
+
+		#canvas_container {
+      width: 100%;
+			height: 100%;
+			
+			.canvas { 
+          position: absolute;
+  				width: 100%;
+  				height: 100%;
+			}
+		}
+	}
+
+  .panel {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    bottom: 0;
+    opacity: 0.6;
+    COLOR: #fff;
+
+    .map_collection {
+      width: 25%;
+      height: 100%;
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      //text-align: center;
+      //COLOR: #fff;
+      padding-left: 2%;
+      position: relative;
+      
+
+      select {
+        // margin-top: 5%;
+        // margin-bottom: 0px;
+        // width: 100%; 
+        //margin-left: 50%;
+        //margin-right: auto;
+      }
+    }
+    .layer_collection {
+      width: 47%;
+      height: 100%;
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+
+    }
+    .scale_container {
+      width: 25%;
+      height: 100%;
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      right: 0;
+
+    }
+  }
+
+	.tileset {
+		display: none;
+	}
+}

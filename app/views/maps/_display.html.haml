@@ -1,0 +1,15 @@
+%div{:id => 'game'}
+	%div{:id => 'canvas_container'}
+%div{:class => 'panel'}
+	%div{:class => 'map_collection'} 
+		%b Map
+		%br 
+		= select_tag(:id, options_for_select(@maps_array, @map.id))
+	%div{:class => 'layer_collection'}
+		%b Layers
+	-# %div{:class => 'scale_container'}
+	-#	%b Scale
+
+%script
+	Map.start(#{@map.id})
+	

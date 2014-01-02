@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  array: MyText
+  map_id: 1
+  tileset_id: 1
+  is_static: false
+  background_color: MyString
+  vertical_speed: 1
+  horizontal_speed: 1
+  is_tile_scroll: false
+  opacity: 9.99
+  is_tile_layer: false
+  is_fill_layer: false
+  is_scrolling: false
+  is_sequence_layer: false
+  sequence_array: MyText
+  image: MyString
+  is_x_stretch: false
+  is_y_stretch: false
+  is_x_repeat: false
+  is_repeat: false
+
+two:
+  array: MyText
+  map_id: 1
+  tileset_id: 1
+  is_static: false
+  background_color: MyString
+  vertical_speed: 1
+  horizontal_speed: 1
+  is_tile_scroll: false
+  opacity: 9.99
+  is_tile_layer: false
+  is_fill_layer: false
+  is_scrolling: false
+  is_sequence_layer: false
+  sequence_array: MyText
+  image: MyString
+  is_x_stretch: false
+  is_y_stretch: false
+  is_x_repeat: false
+  is_repeat: false

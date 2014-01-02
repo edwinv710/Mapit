@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  width: MyString
+  height: MyString
+  container_width: 1
+  container_height: 1
+  tile_width: 1
+  tile_height: 1
+  tileset_id: 1
+  map_source: MyString
+
+two:
+  name: MyString
+  width: MyString
+  height: MyString
+  container_width: 1
+  container_height: 1
+  tile_width: 1
+  tile_height: 1
+  tileset_id: 1
+  map_source: MyString
