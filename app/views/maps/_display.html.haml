@@ -7,6 +7,8 @@
 		= select_tag(:id, options_for_select(@maps_array, @map.id))
 	%div{:class => 'layer_collection'}
 		%b Layers
+	%div{:class => 'instruction', :style => 'text-align: center;'}
+		Click on the map. Use the arrow keys to move around the map. Click on the layer panel to add and remove layers.
 	-# %div{:class => 'scale_container'}
 	-#	%b Scale
 

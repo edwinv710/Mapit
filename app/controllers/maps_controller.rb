@@ -1,7 +1,13 @@
+require 'yaml'
+
 class MapsController < ApplicationController
+  secure = YAML::load_file("#{Rails.root}/config/application.yml")
+  http_basic_authenticate_with :name => secure['access']['username'], :password => secure['access']['password'], :except => [:show]
+
   # GET /maps
   # GET /maps.json
   def index
+
     @maps = Map.all
 
     respond_to do |format|
